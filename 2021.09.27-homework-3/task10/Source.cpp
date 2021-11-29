@@ -16,7 +16,9 @@ int main(int argc, char* argv[])
 	{
 		q = round(pow(i, 0.5));
 		if ((q * q) == i)
+		{
 			cout << i << " ";
+		}
 	}
 
 	return EXIT_SUCCESS;
