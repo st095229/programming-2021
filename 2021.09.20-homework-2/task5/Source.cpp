@@ -1,20 +1,30 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
 	int k = 0;
+	int x = 0;
+	int s = 0;
 
 	cin >> k;
 
-	if (k == 1 || k % 4 == 0)
+	while (k != ((x * 4) - 4))
 	{
-		cout << "YES" << endl;
+		x = x + 1;
+		if (k == (x * 4))
+		{
+			s = 1;
+		}
+	}
+	if (s == 1)
+	{
+		cout << "YES";
 	}
 	else
 	{
-		cout << "NO" << endl;
+		cout << "NO";
 	}
 
 	return EXIT_SUCCESS;
